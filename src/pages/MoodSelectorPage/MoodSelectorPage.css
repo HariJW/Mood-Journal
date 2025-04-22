@@ -1,0 +1,222 @@
+.mood-selector-page {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  padding: 5rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.mood-selector-page-content {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  border-radius: 4rem;
+  padding: 4rem;
+  flex-direction: column;
+  display: flex;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.top-bar-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.topbar-link {
+  margin-left: auto;
+  color: #ffffff;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.topbar-link:hover {
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+.weather {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.mood-selector-page-main {
+  display: flex;
+  flex: 1;
+  background: #feeade;
+  border-radius: 3rem;
+  padding: 5rem;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.mood-selector-section {
+  height: 100%;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 55em;
+}
+
+.current-date {
+  color: #000000;
+  font-size: 2.2rem;
+  margin-bottom: 0.4em;
+
+}
+
+.mood-selector-text {
+  color: #000000;
+
+  font-size: 1.5rem;
+  margin-top: 0.4em;
+
+}
+
+.mood-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0.4em;
+
+}
+.mood-options button {
+  font-size: 3.5rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mood-options .selected {
+  transform: scale(1.2);
+}
+
+.mood-selector-textarea {
+  border: none;
+  outline: none;
+  background: #ffffff;
+  border-radius: 0.5em;
+  width: 100%;
+  padding: 1em;
+  font-size: 1.2rem;
+  resize: none;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  flex: 1;
+}
+
+.save-btn {
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  font-size: 1.5rem;
+  margin-top: 0.4em;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.8em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  display: block;
+  background-size: 200% auto;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+}
+
+.save-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.calender-section {
+  height: 100%;
+  width: 47%;
+  border-radius: 1em;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  font-size: 1.5rem;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+
+.custom-calendar {
+  border: none;
+  outline: none;
+  border-radius: 1em;
+  padding: 0.1em;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background: #6c5ce7;
+  color: white;
+  border-radius: 0.8em;
+}
+
+.custom-calendar .react-calendar__tile:hover {
+  background-color: #dfe6e9;
+  border-radius: 0.8em;
+}
+
+.custom-calendar .react-calendar__tile--now {
+  background: #ffeaa7;
+  border-radius: 0.8em;
+}
+
+.custom-calendar .react-calendar__tile {
+  border: none;
+  padding: 0.4em 0;
+}
+
+.custom-calendar .react-calendar__navigation {
+  margin-bottom: 0em;
+}
+
+.custom-calendar .react-calendar__navigation button {
+  background: none;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+@media (max-width: 480px) {
+  .custom-calendar {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,156 @@
+.all-notes-page {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  padding: 5rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.all-notes-page-content {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  border-radius: 4rem;
+  padding: 4rem;
+  flex-direction: column;
+  display: flex;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.top-bar-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.topbar-link {
+  margin-left: auto;
+  color: #ffffff;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.topbar-link:hover {
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+.all-notes-page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 0;
+  background: transparent;
+  border-radius: 3rem;
+  padding: 4rem;
+  overflow: hidden;
+}
+
+.all-notes-title {
+  text-align: center;
+  font-size: 2.5rem;
+  background: #feeade;
+  border-radius: 0.2em;
+  color: #000000;
+  padding: 0.4em 2em;
+  margin-bottom: 1em;
+}
+
+.all-notes-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  flex: 1;
+  overflow-y: scroll;
+  padding-right: 5em;
+}
+
+.all-notes-wrapper::-webkit-scrollbar {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.all-notes-wrapper::-webkit-scrollbar-track {
+  background: #f0e6ff;
+  border-radius: 1.5em;
+}
+
+.all-notes-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
+  border-radius: 1.5em;
+  border: 0.3em solid transparent;
+  background-clip: content-box;
+}
+
+.all-notes-wrapper::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #f09819, #ff512f);
+}
+
+.note-card {
+  background: #feeade;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 1em;
+  padding: 3em 2em;
+  margin: 2em;
+  height: 16em;
+}
+
+.note-emoji {
+  font-size: 3rem;
+  width: fit-content;
+  margin-right: 0.4em;
+}
+
+.note-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-details-text {
+  font-size: 1.5rem;
+  color: #000000;
+  flex: 1 1 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  margin-bottom: 1em;
+}
+
+.note-details-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #000000;
+  margin-top: auto;
+  align-items: flex-end;
+}
+
+.node-date, .weather {
+  font-size: 1.1rem;
+}
